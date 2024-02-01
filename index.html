@@ -1,101 +1,177 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Luke Hening Portfolio</title>
 </head>
 <body>
     <header>
-        <h1>LUKE'S DESIGN SYSTEM</h1>
+        <nav class="x-container">
+            <ul class="x-container">
+                <a href="#about-me"><li>Me</li></a>
+                <a href="#experience"><li>Experience</li></a>
+                <a href="#projects"><li>Projects</li></a>
+                <a href="mailto:lukehening@gmail.com" class="say-hello-button"><li>Say hello</li></a>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <div class="section color">
-            <h2>Colours</h2>
-            <div class="tengdu-green">
-                <p>Tengdu Green</p>
-                <p>#56BA63</p>
+    <main class="y-container">
+
+        <section id="about-me" class="y-container">
+            <div id="about-me-container">
+            <p class="highlight">My name is</p>
+            <h1>Luke Hening</h1>
+            <h2>I'm a self-taught Frontend Developer</h2>
+            <p>I love building things that make improve peoples’ lives. </p>
+            <p>I’m currently developing <span class="highlight">Tengdu</span>, a mobile application to help people meet up with like-minded people in real life.</p>
             </div>
-            <div class="tengdu-purple">
-                <p>Tengdu Purple</p>
-                <p>#63489D</p>
+        </section>
+
+        <section id="profile" class="y-container">
+            <div class="image-container">
+                <div class="overlay"></div>
+                <img src="./Resources/Images/Profile picture.png" alt="profile picture" id="profile-picture">
             </div>
-            <div class="tengdu-brown">
-                <p>Tengdu Brown</p>
-                <p>#BA8956</p>
+                <div class="x-container" id="social-links">
+                <a href="https://github.com/utlandingur" role="link"><img src="./Resources/Images/GitHub logo.png" alt="GitHub logo"></a>
+                <a href="https://www.linkedin.com/in/lukehening/" role="link"><img src="./Resources/Images/LinkedIn Circled logo.png" alt="LinkedIn logo"></a>
             </div>
-            <div class="tengdu-dark-green">
-                <p>Tengdu Dark Green</p>
-                <p>#506553</p>
-            </div>
-            <div class="tengdu-dark-grey">
-                <p>Tengdu Dark Grey</p>
-                <p>#3C3632</p>
-            </div>
-        </div>
-        <div class="section fonts">
-            <h2>Fonts</h2>
-            <div class="nunito-sans">
-                <h3>Nunito Sans</h3>
-                <p class="normal">The quick brown fox jumps over the lazy dog.</p>
-                <p class="bold">The quick brown fox jumps over the lazy dog.</p>
-                <p class="italics">The quick brown fox jumps over the lazy dog.</p>
-            </div>
-            <div class="open-sans">
-                <h3>Open Sans</h3>
-                <p class="normal">The quick brown fox jumps over the lazy dog.</p>
-                <p class="bold">The quick brown fox jumps over the lazy dog.</p>
-                <p class="italics">The quick brown fox jumps over the lazy dog.</p>
-            </div>
-                
-        </div>
-        <div class="text section">
-            <h2>Text Styles</h2>
-            <div class="text-section">
-                <h1 class="text-style-heading">H1: Main page heading</h1>
-                <ul>
-                    <li>Font-weight: 700 (bold)</li>
-                    <li>Font-size: 26px</li>
-                    <li>Font-family: Nunito Sans</li>
-                </ul>
-            </div>
-            <div class="text-section">
-                <h2 class="text-style-heading">H2: Subheading</h2>
-                <ul>
-                    <li>Font-weight: 500 (bold)</li>
-                    <li>Font-size: 18px</li>
-                    <li>Font-family: Nunito</li>
-                </ul>
-            </div>
-            <div class="text-section">
-                <p class="text-style-heading">Paragraph text</p>
-                <ul>
-                    <li>Font-weight: 400 (regular)</li>
-                    <li>Font-size: 14px</li>
-                    <li>Font-family: Open Sans</li>
-                </ul>
-            </div>
-        </div>
-        <div class="button-section section">
-            <h2>Button styles</h2>
-            <div class="button-section-container">
-                <div class="single-buttons">
-                        <input type="button" class="button button-primary" value="Primary">
-                        <input type="button" class="button button-secondary" value="Secondary">
-                        <input type="button" class="button button-tertiary" value="Tertiary">
+        </section>
+
+        <section id="experience" >
+            <h2>Experience</h2>
+            <div id="experience-container">
+            <article class="frontend-development y-container">
+                <div class="subtitle">
+                    <div role="presentation" class="presentation">
+                        <img src="./Resources/Images/Source Code.png" alt="">
+                    </div>
+                    <h3>Frontend Development</h3>
                 </div>
-                <div class="single-buttons">
-                    <input type="button" class="button button-primary disabled" value="Primary">
-                    <input type="button" class="button button-secondary disabled" value="Secondary">
-                    <input type="button" class="button button-tertiary disabled" value="Tertiary">
+                <div class="technologies-used">
+                    <h4>Technologies I've used</h4>
+                    <p>React Native, Javascript, CSS, Git, Figma, JSX, HTML</p>
+                </div>
+                <div class="things-built">
+                    <h4>Things I’ve helped build</h4>
+                    <p>Tengdu.app website</p>
+                    <p>Tengdu.app application</p>
+                </div>
+
+            </article>
+            <article class="product-management y-container">
+                <div class="subtitle">
+
+                    <div role="presentation" class="presentation">
+                        <img src="./Resources/Images/Source Code.png" alt="">
+                    </div>
+                    <h3>Product Management</h3>
+                </div>
+                <div class="technologies-used">
+                    <h4>Skills I’ve applied</h4>
+                    <p>Product Strategy, Design Sprints, User Interviews, Backlog Management</p>
+                </div>
+                <div class="things-built">
+                    <h4>Things I’ve helped build</h4>
+                    <p>Orlo.tech</p>
+                    <p>Menandmice.com</p>
+                    <p>services.signin.education.gov.uk</p>
+                    <p>heypharmacist.co.uk</p>
+                </div>
+                </article>
+        </section>
+
+        <section id="projects" class="y-container">
+            <h2>Dev Projects</h2>
+            <div id="projects-container">
+                <article class="y-container project">
+                    <div class="project-info-container">
+                        <h3 class="highlight">Spotify playlist creator</h3>
+                        <p class="bold">January 2023</p>
+                        <p>React Native app leveraging the spotify API.</p>
+                        <p class="bold">Technologies used:</p>
+                        <ul>
+                            <li>React</li>
+                            <li>Javascript</li>
+                            <li>CSS</li>
+                        </ul>
+                        <p><a href="https://github.com/utlandingur/jammming">Link to GitHub repo</a></p>
+                    </div>
+                    <div class="image-container">
+                        <img src="./Resources/Images/Spotify app.png" alt="Screenshot of Tengdu website">
+                    </div>
+                </article>
+                <article class="y-container project">
+                    <div class="project-info-container">
+                        <h3 class="highlight">Tengdu application</h3>
+                        <p class="bold">December 2023</p>
+                        <p>Designed a new app for web and mobile, Tengdu.</p>
+                        <p class="bold">Technologies used:</p>
+                        <ul>
+                            <li>Figma</li>
+                        </ul>
+                    </div>
+                    <div class="image-container">
+                        <img src="./Resources/Images/Tengdu app.png" alt="Screenshot of Tengdu website">
+                    </div>
+                </article>
+                <article class="y-container project">
+                    <div class="project-info-container">
+                        <h3 class="highlight">Command line game</h3>
+                        <p class="bold">January 2023</p>
+                        <p>Command line game built with JS</p>
+                        
+                        <p class="bold">Technologies used:</p>
+                        <ul>
+                            <li>Javascript</li>
+                        </ul>
+                        <p><a href="https://github.com/utlandingur/findTheHat">Link to GitHub repo</a></p>
+                    </div>
+                    <div class="image-container">
+                        <img src="./Resources/Images/Command line game.png" alt="Screenshot of Tengdu website">
+                    </div>
+                </article>
+                <article class="y-container project">
+                    <div class="project-info-container">
+                        <h3 class="highlight">Tengdu.app website</h3>
+                        <p class="bold">December 2023</p>
+                        <p>Designed and built a static marketing website for a new app, Tengdu.</p>
+                        <p class="bold">Technologies used:</p>
+                        <ul>
+                            <li>Figma</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
+                    <div class="image-container">
+                        <img src="./Resources/Images/Tengdu website.png" alt="Screenshot of Tengdu website">
+                    </div>
+                </article>
+                
+                
             </div>
-            <div class="grouped-buttons">
-                <input type="button" class="button back button-secondary" value="Back">
-                <input type="button" class="button proceed button-primary" value="Proceed">
+        </section>
+        
+        <section id="get-in-touch">
+            <div id="get-in-touch-container">
+
+                <h2>Get in Touch</h2>
+                <p>I’m a British expat living in Iceland and I’m currently looking for my first role as a junior frontend developer.</p>
+                <p>If you think it might be worth a chat, just reach out and I’ll back to you as soon as I can.</p>
+                <br>
+                <a href="mailto:lukehening@gmail.com" class="say-hello-button">Say hello</a>
             </div>
-            </div>
-        </div>
+        </section>
     </main>
+    
+    <footer class="y-container">
+        <div id="footer-container">
+            <p>Designed and built by Luke Hening</p>
+        </div>
+    </footer>
+
 </body>
 </html>

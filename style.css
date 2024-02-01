@@ -1,0 +1,423 @@
+/* import Roboto */
+/* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* Reset */
+html {
+    font-size: 16px;
+}
+
+@media screen and (min-width: 800px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    margin-block: 0;
+}
+
+/* Structure styling */
+
+body, main, footer {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.y-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.x-container {
+    display: flex;
+}
+
+main, footer {
+    position: relative;
+    top: 4rem;
+}
+
+main section, footer {
+    padding: 3rem 2rem 2rem 2rem;
+}
+
+/* Font styles */
+h1 {
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    color: #FFFFFF;
+}
+
+h3 {
+    color: #FFFFFF;
+    margin-bottom: 1.5rem;
+}
+
+h4 {
+    color: #64FFDA;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+}
+
+p {
+    color: #CCD6F6;
+    margin-bottom: 0.75rem;
+    font-weight: 300;
+}
+
+li {
+    color: #CCD6F6;
+    list-style-position: inside;
+    left: 5rem;
+}
+
+.highlight {
+    color: #64FFDA;
+}
+
+.bold {
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+/* Component styles  */
+.say-hello-button {
+    color: #64FFDA;
+    border-radius: 16px;
+    border: solid #64FFDA 2px;
+    padding: 0.2rem 0.8rem;
+    text-decoration: none;
+}
+
+.presentation {
+    width: 3.5rem;
+    background-color: #64FFDA;
+    border-radius: 16px;
+    z-index: 1;
+}
+
+/* Header */
+nav {
+    background-color: #0B192F;
+    border-bottom: 0.1rem solid #3c3632;
+    height: 4rem;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    font-weight: 400;
+}
+
+nav ul {
+    width: 100%;
+    justify-content: end;
+    padding-right: 1rem;
+    gap: 1rem;
+    align-items: center;
+}
+
+nav li {
+    display: inline-block;
+    color: #FFFFFF;
+}
+
+nav .say-hello-button li {
+    display: inline-block;
+    color: #64FFDA;
+}
+
+/* Main styles */
+
+/* About me */
+#about-me {
+    background-color: #0B192F;
+}
+
+@media screen and (min-width: 800px) {
+    #about-me {
+        align-items: center;
+        text-align: left;
+    }
+
+    #about-me-container{
+        max-width: 660px;
+    }
+}
+
+/* Profile picture and social section */
+
+#profile {
+    align-items: center;
+    justify-content: space-around;
+    gap: 0.5rem;
+    background-color: #0B192F;
+    padding-top: 1rem;
+}
+
+#profile-picture {
+    height: auto;
+    width: 100%;
+    max-width: 12rem;
+    border-radius: 16px;
+}
+
+#social-links {
+    gap: 0.5rem;
+}
+
+#profile .image-container {
+    position: relative;
+}
+
+#profile .overlay {
+    background-color: #64FFDA;
+    z-index: 1;
+    height: 14.375rem;
+    width: 12rem;
+    opacity: 0.3;
+    border-radius: 16px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* Experience section */
+#experience {
+    background-color: #1E1E1E;
+    text-align: center;
+    gap: 2rem;
+    align-items: center;
+}
+
+.project a {
+    color: #64FFDA;
+    font-size: 0.75rem;
+}
+
+.link {
+   padding-top: 1rem;
+}
+
+.frontend-development, .product-management {
+    border-radius: 16px;
+    border: solid #64FFDA 2px;
+    padding: 0.2rem 0.8rem;
+    justify-content: flex-start;
+    height: 24rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+.subtitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 0.75rem;
+}
+
+#experience-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.things-built, .technologies-used {
+    padding-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 800px) {
+    #experience-container{
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .frontend-development, .product-management {
+        width: 50%;
+        min-width: 50%;
+        height: 24rem;
+    }
+
+    .technologies-used {
+        height: 7rem;
+    }
+}
+
+/* Dev projects section */
+#projects {
+    background-color: #0B192F;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#projects img {
+    max-height: 15rem;
+    height: auto;
+    max-width: 80vw;
+    border-radius: 16px;
+    object-fit:fill;
+    object-position: top;
+    top: 0;
+    position: relative;
+    box-shadow: 10px 8px #64FFDA;
+}
+
+#projects article {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 4rem;
+}
+
+#tengdu-app-container, #tengdu-website-container {
+    max-width: 300px;
+}
+
+#projects .image-container {
+    position: relative;
+}
+
+#projects .overlay {
+    background-color: #64FFDA;
+    z-index: 1;
+    height: 22rem;
+    width: 8.55rem;
+    opacity: 0.3;
+    border-radius: 16px;
+    position: absolute;
+    top: 0;
+}
+
+
+#projects-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5rem;
+}
+
+#tengdu-website, #tendu-app {
+    width: 100%;
+    min-width: 50%;
+}
+
+.project {
+    align-items: center;
+    text-align: center;
+}
+
+.project-info-container ul {
+    text-align: center;
+    list-style: none;
+}
+
+@media screen and (min-width: 800px) {
+    /* #projects-container{
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+    } */
+
+  #projects article {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #projects .project-info-container {
+    width: 50%;
+  }
+
+  #projects .image-container {
+    width: 50%
+  }
+
+  #projects img {
+    max-height: 22rem;
+    height: 15rem;
+    width: auto;
+    max-width: 100%;
+    border-radius: 16px;
+    object-fit:cover;
+    object-position: left;
+    top: 0;
+    position: relative;
+    box-shadow: 10px 8px #64FFDA;
+}
+    #projects article {
+        gap: 1rem;
+    }
+
+    #projects-container {
+        width: 100%;
+        max-width: fit-content;
+    }
+
+    project div {
+        max-width: 300px;
+}
+}
+
+/* Get in touch section */
+#get-in-touch {
+    background-color: #1E1E1E;
+}
+
+#get-in-touch .say-hello-button {
+    width: 12rem;
+}
+
+@media screen and (min-width: 800px) {
+    #get-in-touch {
+        display: flex;
+        justify-content: center;
+        text-align: left;
+    }
+
+    #get-in-touch-container {
+        max-width: 660px;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #1E1E1E;
+    text-align: left;
+}
+
+footer p {
+    color: #64FFDA;
+}
+
+@media screen and (min-width: 800px) {
+    footer {
+        display: flex;
+        align-items: center;
+    }
+
+    #footer-container {
+        width: 660px;
+        max-width: 660px;
+    }
+}
+
+/* Transitions */
+.overlay {
+    transition: opacity 0.8s cubic-bezier(0.1, 0.6, 0.4, 0.9);
+}
