@@ -321,6 +321,8 @@ nav .say-hello-button li {
 .project {
     align-items: center;
     text-align: center;
+    padding: 10px 0px 50px 0px;
+    border-bottom: 1px solid #CCD6F6;
 }
 
 .project-info-container ul {
