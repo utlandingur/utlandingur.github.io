@@ -75,6 +75,10 @@ p {
     font-weight: 300;
 }
 
+a {
+    text-decoration: none;
+}
+
 li {
     color: #CCD6F6;
     list-style-position: inside;
