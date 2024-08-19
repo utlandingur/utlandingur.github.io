@@ -1,6 +1,6 @@
 /* import Roboto */
 /* font-family: 'Roboto', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 /* Reset */
 html {
@@ -22,9 +22,11 @@ html {
 
 /* Structure styling */
 
-body, main, footer {
+body,
+main,
+footer {
     width: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .y-container {
@@ -36,18 +38,20 @@ body, main, footer {
     display: flex;
 }
 
-main, footer {
+main,
+footer {
     position: relative;
     top: 4rem;
 }
 
-main section, footer {
+main section,
+footer {
     padding: 3rem 2rem 2rem 2rem;
 }
 
 /* Font styles */
 h1 {
-    color: #FFFFFF;
+    color: #ffffff;
     margin-top: 0;
     margin-bottom: 2rem;
 }
@@ -55,22 +59,22 @@ h1 {
 h2 {
     font-size: 1.75rem;
     margin-bottom: 1.5rem;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 h3 {
-    color: #FFFFFF;
+    color: #ffffff;
     margin-bottom: 1.5rem;
 }
 
 h4 {
-    color: #64FFDA;
+    color: #64ffda;
     margin-bottom: 0.5rem;
     font-weight: 400;
 }
 
 p {
-    color: #CCD6F6;
+    color: #ccd6f6;
     margin-bottom: 0.75rem;
     font-weight: 300;
 }
@@ -80,39 +84,43 @@ a {
 }
 
 li {
-    color: #CCD6F6;
+    color: #ccd6f6;
     list-style-position: inside;
     left: 5rem;
 }
 
 .highlight {
-    color: #64FFDA;
+    color: #64ffda;
+}
+
+.highlight:hover {
+    font-weight: bolder;
 }
 
 .bold {
-    color: #FFFFFF;
+    color: #ffffff;
     font-weight: 700;
 }
 
 /* Component styles  */
 .say-hello-button {
-    color: #64FFDA;
+    color: #64ffda;
     border-radius: 16px;
-    border: solid #64FFDA 2px;
+    border: solid #64ffda 2px;
     padding: 0.2rem 0.8rem;
     text-decoration: none;
 }
 
 .presentation {
     width: 3.5rem;
-    background-color: #64FFDA;
+    background-color: #64ffda;
     border-radius: 16px;
     z-index: 1;
 }
 
 /* Header */
 nav {
-    background-color: #0B192F;
+    background-color: #0b192f;
     border-bottom: 0.1rem solid #3c3632;
     height: 4rem;
     align-items: center;
@@ -132,19 +140,19 @@ nav ul {
 
 nav li {
     display: inline-block;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 nav .say-hello-button li {
     display: inline-block;
-    color: #64FFDA;
+    color: #64ffda;
 }
 
 /* Main styles */
 
 /* About me */
 #about-me {
-    background-color: #0B192F;
+    background-color: #0b192f;
 }
 
 @media screen and (min-width: 800px) {
@@ -153,7 +161,7 @@ nav .say-hello-button li {
         text-align: left;
     }
 
-    #about-me-container{
+    #about-me-container {
         max-width: 660px;
     }
 }
@@ -164,7 +172,7 @@ nav .say-hello-button li {
     align-items: center;
     justify-content: space-around;
     gap: 0.5rem;
-    background-color: #0B192F;
+    background-color: #0b192f;
     padding-top: 1rem;
 }
 
@@ -183,8 +191,8 @@ nav .say-hello-button li {
     position: relative;
 }
 
-#profile .overlay {
-    background-color: #64FFDA;
+.overlay {
+    background-color: #64ffda;
     z-index: 1;
     height: 14.375rem;
     width: 12rem;
@@ -194,27 +202,27 @@ nav .say-hello-button li {
     top: 0;
 }
 
-
 /* Experience section */
 #experience {
-    background-color: #1E1E1E;
+    background-color: #1e1e1e;
     text-align: center;
     gap: 2rem;
     align-items: center;
 }
 
 .project a {
-    color: #64FFDA;
+    color: #64ffda;
     font-size: 0.75rem;
 }
 
 .link {
-   padding-top: 1rem;
+    padding-top: 1rem;
 }
 
-.frontend-development, .product-management {
+.frontend-development,
+.product-management {
     border-radius: 16px;
-    border: solid #64FFDA 2px;
+    border: solid #64ffda 2px;
     padding: 0.2rem 0.8rem;
     justify-content: flex-start;
     height: 24rem;
@@ -231,7 +239,7 @@ nav .say-hello-button li {
     padding-top: 0.75rem;
 }
 
-#experience-container{
+#experience-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -239,12 +247,13 @@ nav .say-hello-button li {
     gap: 2rem;
 }
 
-.things-built, .technologies-used {
+.things-built,
+.technologies-used {
     padding-bottom: 1.5rem;
 }
 
 @media screen and (min-width: 800px) {
-    #experience-container{
+    #experience-container {
         display: inline-flex;
         flex-direction: row;
         align-items: center;
@@ -252,7 +261,8 @@ nav .say-hello-button li {
         margin: auto;
     }
 
-    .frontend-development, .product-management {
+    .frontend-development,
+    .product-management {
         width: 50%;
         min-width: 50%;
         height: 24rem;
@@ -265,7 +275,7 @@ nav .say-hello-button li {
 
 /* Dev projects section */
 #projects {
-    background-color: #0B192F;
+    background-color: #0b192f;
     justify-content: center;
     align-items: center;
     gap: 2rem;
@@ -276,11 +286,11 @@ nav .say-hello-button li {
     height: auto;
     max-width: 80vw;
     border-radius: 16px;
-    object-fit:fill;
+    object-fit: fill;
     object-position: top;
     top: 0;
     position: relative;
-    box-shadow: 10px 8px #64FFDA;
+    box-shadow: 10px 8px #64ffda;
 }
 
 #projects article {
@@ -289,7 +299,8 @@ nav .say-hello-button li {
     gap: 4rem;
 }
 
-#tengdu-app-container, #tengdu-website-container {
+#tengdu-app-container,
+#tengdu-website-container {
     max-width: 300px;
 }
 
@@ -298,7 +309,7 @@ nav .say-hello-button li {
 }
 
 #projects .overlay {
-    background-color: #64FFDA;
+    background-color: #64ffda;
     z-index: 1;
     height: 22rem;
     width: 8.55rem;
@@ -308,8 +319,7 @@ nav .say-hello-button li {
     top: 0;
 }
 
-
-#projects-container{
+#projects-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -317,7 +327,8 @@ nav .say-hello-button li {
     gap: 3.5rem;
 }
 
-#tengdu-website, #tendu-app {
+#tengdu-website,
+#tendu-app {
     width: 100%;
     min-width: 50%;
 }
@@ -326,7 +337,7 @@ nav .say-hello-button li {
     align-items: center;
     text-align: center;
     padding: 10px 0px 50px 0px;
-    border-bottom: 1px solid #CCD6F6;
+    border-bottom: 1px solid #ccd6f6;
 }
 
 .project-info-container ul {
@@ -341,31 +352,31 @@ nav .say-hello-button li {
         width: 100vw;
     } */
 
-  #projects article {
-    flex-direction: row;
-    justify-content: space-between;
-  }
+    #projects article {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
-  #projects .project-info-container {
-    width: 50%;
-  }
+    #projects .project-info-container {
+        width: 50%;
+    }
 
-  #projects .image-container {
-    width: 50%
-  }
+    #projects .image-container {
+        width: 50%;
+    }
 
-  #projects img {
-    max-height: 22rem;
-    height: 15rem;
-    width: auto;
-    max-width: 100%;
-    border-radius: 16px;
-    object-fit:cover;
-    object-position: left;
-    top: 0;
-    position: relative;
-    box-shadow: 10px 8px #64FFDA;
-}
+    #projects img {
+        max-height: 22rem;
+        height: 15rem;
+        width: auto;
+        max-width: 100%;
+        border-radius: 16px;
+        object-fit: cover;
+        object-position: left;
+        top: 0;
+        position: relative;
+        box-shadow: 10px 8px #64ffda;
+    }
     #projects article {
         gap: 1rem;
     }
@@ -377,12 +388,12 @@ nav .say-hello-button li {
 
     project div {
         max-width: 300px;
-}
+    }
 }
 
 /* Get in touch section */
 #get-in-touch {
-    background-color: #1E1E1E;
+    background-color: #1e1e1e;
 }
 
 #get-in-touch .say-hello-button {
@@ -403,12 +414,12 @@ nav .say-hello-button li {
 
 /* Footer */
 footer {
-    background-color: #1E1E1E;
+    background-color: #1e1e1e;
     text-align: left;
 }
 
 footer p {
-    color: #64FFDA;
+    color: #64ffda;
 }
 
 @media screen and (min-width: 800px) {
