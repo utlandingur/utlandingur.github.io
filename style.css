@@ -73,14 +73,14 @@ h4 {
     font-weight: 400;
 }
 
+a {
+    text-decoration: none;
+}
+
 p {
     color: #ccd6f6;
     margin-bottom: 0.75rem;
     font-weight: 300;
-}
-
-a {
-    text-decoration: none;
 }
 
 li {
@@ -343,6 +343,12 @@ nav .say-hello-button li {
 .project-info-container ul {
     text-align: center;
     list-style: none;
+}
+
+a.view-code {
+    padding: 1rem;
+    font-size: 1rem;
+    text-decoration: underline;
 }
 
 @media screen and (min-width: 800px) {
